@@ -1,1 +1,1 @@
-# SiMadik - Sistem Manajemen Pendidikan
+# Add AdminLTE v 3.2 here
