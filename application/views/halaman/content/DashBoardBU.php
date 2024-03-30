@@ -56,7 +56,67 @@ function hitungSelisihWaktu($waktu_dari_database)
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-        
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-lg-3 col-6 animate__animated animate__slideInLeft">
+            <!-- small box -->
+            <div class="small-box shadow" style="transform: perspective(5000px); backdrop-filter: blur(1px); background-color: rgba(200, 0, 0, 0.3); transition: backdrop-filter 0.7s ease-in-out;">
+              <div class="inner">
+                <h3><?= $Jumlah_Staff ?></h3>
+                <p>Total Pegawai</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 animate__animated animate__fadeInDown">
+            <!-- small box -->
+            <div class="small-box shadow" style="transform: perspective(5000px); transition: backdrop-filter 0.7s ease-in-out; backdrop-filter: blur(1px); background-color: rgba(0, 200, 0, 0.3);">
+              <div class="inner">
+                <h3><?= $Jumlah_Guru ?></h3>
+
+                <p>Total Guru</p>
+              </div>
+              <div class="icon">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6 animate__animated animate__fadeInUp">
+            <!-- small box -->
+            <div class="small-box shadow" style="transform: perspective(5000px); transition: backdrop-filter 0.7s ease-in-out; backdrop-filter: blur(1px); background-color: rgba(0, 0, 200, 0.3);">
+              <div class="inner">
+                <h3><?= $Jumlah_Murid ?></h3>
+
+                <p>Total Siswa</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-users"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6 animate__animated animate__slideInRight">
+            <!-- small box -->
+            <div class="small-box shadow" style="transform: perspective(5000px); transition: backdrop-filter 0.7s ease-in-out; backdrop-filter: blur(1px); background-color: rgba(200, 200, 0, 0.3);">
+              <div class="inner">
+                <h3><?= $Jumlah_Kelas ?></h3>
+
+                <p>Total Kelas</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-store-alt"></i>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <!-- /.row -->
 
         <div class="row">
           <div class="col-md-12">
@@ -77,56 +137,70 @@ function hitungSelisihWaktu($waktu_dari_database)
 
                 <ul class="list-group list-group-unbordered mb-3">
                   <li class="list-group-item">
-                    <b>Nama :</b> <i class="float-right col-md-12"><?= $this->session->userdata('NamaGuru') ?></i>
+                    <b>Nama :</b> <i class="float-right"><?= $this->session->userdata('NamaGuru') ?></i>
                   </li>
                   <li class="list-group-item">
-                    <b>Mata Pelajaran Yang Di Pegang :</b>
-                    
-                    <i class="input-group float-right col-md-12">
-                      <?php
-                        $Nama = array();
+                    <b>Pelajaran :</b>
+                    <a class="input-group float-right col-md-12">
+                      <select name="IDMapel" class="form-control select2" required style="width: 100%;">
+                        <option value="">Pelajaran</option>
+                        <?php
                         if ($MapelGuru != FALSE) {
-                          foreach ($MapelGuru as $MG) {
-                            $Nama[]=$MG->NamaMapel;
-                         }
+                          foreach ($MapelGuru as $MG) { ?>
+                            <option <?php if ($MG->IDMapel == $this->session->userdata('IDMapel')) {
+                                      echo "selected";
+                                    } ?> value="<?= $MG->IDMapel ?>"><?= $MG->NamaMapel ?></option>
+                        <?php }
                         }
                         ?>
-                        <?= implode(', ', $Nama)?>
-                    </i>
+                      </select>
+                    </a>
                     <!-- /.input group -->
                   </li>
 
                   <li class="list-group-item">
                     <b>Semester :</b>
-                    <i class="input-group float-right col-md-12">
-                      
+                    <a class="input-group float-right col-md-12">
+                      <select class="form-control select2 shadow" name="Semester" required style="width: 100%;">
+                        <option value="">Semester</option>
                         <?php
                         if ($Semester != FALSE) {
-                          foreach ($Semester as $SM) {
-                            if ($this->session->userdata('IDSemester') == $SM->IDSemester) {
-                              echo $SM->NamaSemester;
-                            }
-                          }
+                          foreach ($Semester as $SM) { ?>
+                            <option <?php if ($this->session->userdata('IDSemester') == $SM->IDSemester) {
+                                      echo "selected";
+                                    } ?> value="<?= $SM->IDSemester ?>"><?= $SM->NamaSemester ?></option>
+                        <?php }
                         }
                         ?>
-                    </i>
+                      </select>
+                    </a>
                     <!-- /.input group -->
                   </li>
 
                   <li class="list-group-item">
                     <b>Tahun Ajaran :</b>
-                    <i class="input-group float-right col-md-12">
+                    <a class="input-group float-right col-md-12">
+                      <select class="form-control select2 shadow" name="TahunAjaran" required style="width: 100%;">
+                        <option value="">Tahun Ajaran</option>
                         <?php if ($TahunAjaran != false) {
-                          foreach ($TahunAjaran as $TA) {
-                            if ($this->session->userdata('IDAjaran') == $TA->IDAjaran) {
-                              echo $TA->KodeAjaran;
-                            }
-                          }
-                        } ?>
-                    </i>
+                          foreach ($TahunAjaran as $TA) { ?>
+                            <option <?php if ($this->session->userdata('IDAjaran') == $TA->IDAjaran) {
+                                      echo "selected";
+                                    } ?> value="<?= $TA->IDAjaran ?>"><?= $TA->KodeAjaran ?></option>
+                        <?php }
+                        }
+                        ?>
+                      </select>
+                    </a>
                     <!-- /.input group -->
                   </li>
-                  
+                  <li class="list-group-item">
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-block btn-primary shadow" style="transform: perspective(5000px);">
+                        <i class="fas fa-clipboard-check"></i> Tentukan
+                      </button>
+                    </div>
+                  </li>
 
                 </ul>
               </div>
@@ -177,7 +251,7 @@ function hitungSelisihWaktu($waktu_dari_database)
                     ?>
                         <tr align="center">
                           <td><?= $no ?></td>
-                          <td><?= date('Y/m/d', strtotime($tj->TglAbsensi)) ?></td>
+                          <td><?= date('d/m/Y', strtotime($tj->TglAbsensi)) ?></td>
                           <td><?= $tj->KodeKelas ?></td>
                           <td><?= $tj->MulaiJampel . ' - ' . $tj->AkhirJampel ?></td>
                           <td><?= $tj->NamaMapel ?></td>
@@ -275,6 +349,7 @@ function hitungSelisihWaktu($waktu_dari_database)
   $(function() {
     $('#TabelInformasi').DataTable({
       "paging": true,
+      "lengthChange": false,
       "lengthMenu": [7],
       "searching": true,
       "ordering": true,
