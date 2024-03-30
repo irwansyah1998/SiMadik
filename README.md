@@ -56,6 +56,6 @@ Proyek ini dilisensikan di bawah [lisensi MIT](https://opensource.org/licenses/M
 
 ## Kontak
 
-Jika Anda memiliki pertanyaan, saran, atau masalah terkait penggunaan atau pengembangan SiMadik, jangan ragu untuk menghubungi kami melalui email: [indra@simadik.com](mailto:indra@simadik.com).
+Jika Anda memiliki pertanyaan, saran, atau masalah terkait penggunaan atau pengembangan SiMadik, jangan ragu untuk menghubungi kami melalui email: [indra@simadik.com](mailto:nigun1998@gmail.com).
 
 Terima kasih telah menggunakan SiMadik! Kami harap aplikasi ini membantu dalam meningkatkan efisiensi administrasi sekolah Anda.
