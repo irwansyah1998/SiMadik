@@ -71,6 +71,6 @@ Proyek ini dilisensikan di bawah [lisensi Indra Gunawan Ardiansyah License](#).
 
 ## Kontak
 
-Jika Anda memiliki pertanyaan, saran, atau masalah terkait penggunaan atau pengembangan SiMadik, jangan ragu untuk menghubungi kami melalui email: [indra@simadik.com](mailto:nigun1998@gmail.com).
+Jika Anda memiliki pertanyaan, saran, atau masalah terkait penggunaan atau pengembangan SiMadik, jangan ragu untuk menghubungi kami melalui email: [nigun1998@gmail.com](mailto:nigun1998@gmail.com).
 
 Terima kasih telah menggunakan SiMadik! Kami harap aplikasi ini membantu dalam meningkatkan efisiensi administrasi sekolah Anda.
