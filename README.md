@@ -1,8 +1,24 @@
 # SiMadik - Sistem Manajemen Pendidikan
 
+![SiMadik Logo](https://link.ke.logo.simadik)
+
 ---
 
 **Penulis:** Indra Gunawan Ardiansyah
+
+**Lisensi:** Indra Gunawan Ardiansyah License
+Version 1.0, March 31, 2024
+
+**Catatan Tambahan:**
+Penggunaan dan distribusi aplikasi ini hanya diperbolehkan bagi mereka yang menjadi patron di Patreon Indra Gunawan Ardiansyah dan memiliki status "Healer" setidaknya di Patreon tersebut. Untuk menjadi patron, silakan kunjungi [https://www.patreon.com/irwansyah199](https://www.patreon.com/irwansyah199).
+
+Semua hak dilindungi oleh hukum.
+
+Pembagian aplikasi ini untuk tujuan komersial tanpa izin eksplisit dari penulis, Indra Gunawan Ardiansyah, dilarang. Pemilik asli dari aplikasi ini adalah Indra Gunawan Ardiansyah.
+
+[Tambahan dan pemberitahuan hukum, jika ada]
+
+---
 
 **Deskripsi:**
 SiMadik (Sistem Manajemen Pendidikan) adalah sebuah aplikasi yang dirancang untuk membantu dalam manajemen sekolah. Dikembangkan dengan tujuan untuk memudahkan proses administrasi sekolah, SiMadik mencakup fitur-fitur seperti absensi siswa, pengiriman pesan via WhatsApp, dan manajemen administrasi sekolah lainnya.
@@ -50,7 +66,7 @@ Kami menyambut kontribusi dari para pengembang untuk meningkatkan fungsionalitas
 
 ## Lisensi
 
-Proyek ini dilisensikan di bawah [lisensi MIT](https://opensource.org/licenses/MIT). Lihat file `LICENSE` untuk detail lebih lanjut.
+Proyek ini dilisensikan di bawah [lisensi Indra Gunawan Ardiansyah License](#).
 
 ---
 
