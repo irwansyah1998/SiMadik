@@ -1,1 +1,1 @@
-# Add AdminLTE v 3.2 here
+# Add AdminLTE v 3.2.0 here
