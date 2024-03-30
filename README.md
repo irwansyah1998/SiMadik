@@ -1,7 +1,5 @@
 # SiMadik - Sistem Manajemen Pendidikan
 
-![SiMadik Logo](https://link.ke.logo.simadik)
-
 ---
 
 **Penulis:** Indra Gunawan Ardiansyah
