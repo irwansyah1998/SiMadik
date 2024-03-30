@@ -1,6 +1,5 @@
 # SiMadik - Sistem Manajemen Pendidikan
 
-![SiMadik Logo](https://link.ke.logo.simadik)
 
 ---
 
