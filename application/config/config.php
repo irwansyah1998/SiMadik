@@ -392,7 +392,7 @@ $config['encryption_key'] = 'theworldisendwithdestruction';
 |
 */
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'raghozaliyah';
+$config['sess_cookie_name'] = 'NamaSekolah';
 $config['sess_samesite'] = 'Lax';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = NULL;
