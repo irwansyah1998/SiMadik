@@ -15,8 +15,6 @@ Semua hak dilindungi oleh hukum.
 
 Pembagian aplikasi ini untuk tujuan komersial tanpa izin eksplisit dari penulis, Indra Gunawan Ardiansyah, dilarang. Pemilik asli dari aplikasi ini adalah Indra Gunawan Ardiansyah.
 
-[Tambahan dan pemberitahuan hukum, jika ada]
-
 ---
 
 **Deskripsi:**
